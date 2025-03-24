@@ -1,8 +1,4 @@
-{
-    "recommendations": [
-        "rubenverg.bootstrap-product-icons"
-    ]
-}
+
 - 👋 Hi, I’m @tadese-ayane
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
