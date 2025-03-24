@@ -1,3 +1,4 @@
+dependabot/pip/requests-2.31.0
 https://github.com/tadese-ayane/square.github.io/blob/e378b443c8dc01fef57c24ab6682a98021607649/Gemfile.lock
 It seems I can't access the contents of the file directly. However, I can provide some general tips on how to improve image files:
 
