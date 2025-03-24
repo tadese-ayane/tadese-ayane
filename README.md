@@ -1,23 +1,3 @@
-core
-    core.rule1 (normalize)
-    ...
- core.ruleX
-  block
-        block.rule1 (blockquote)
-        ...
-  block.ruleX
-
-    core.ruleX1 (intermediate rule that applies on block tokens, nothing yet)
-    ...
-    core.ruleXX
-
-    inline (applied to each block token with "inline" type)
-        inline.rule1 (text)
-        ...
-        inline.ruleX
-
-    core.ruleYY (applies to all tokens)
-    ... (abbreviation, footnote, typographer, linkifier)
 
 https://github.com/tadese-ayane/markdown-it/edit/master/docs/README.md
 https://github.com/tadese-ayane/square.github.io/blob/e378b443c8dc01fef57c24ab6682a98021607649/index.html#L42
