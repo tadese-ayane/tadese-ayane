@@ -1,5 +1,8 @@
-https://github.com/tadese-nagewo/electron/blob/b0f09efb536a94c155fb0ea3c7238ec5cceb7dcc/default_app/index.html#L10
-
+{
+    "recommendations": [
+        "rubenverg.bootstrap-product-icons"
+    ]
+}
 - 👋 Hi, I’m @tadese-ayane
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
