@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>keyup</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+</body>
 https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_js
 https://github.com/tadese-ayane/markdown-it/edit/master/docs/README.md
 https://github.com/tadese-ayane/square.github.io/blob/e378b443c8dc01fef57c24ab6682a98021607649/index.html#L42
