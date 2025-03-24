@@ -1,6 +1,4 @@
--
-1C Enterprise:
-  type: programming
+--
   color: "#814CCC"
   extensions:
   - ".bsl"
