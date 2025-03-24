@@ -1,12 +1,11 @@
 core
     core.rule1 (normalize)
     ...
-    core.ruleX
-
-    block
+ core.ruleX
+  block
         block.rule1 (blockquote)
         ...
-        block.ruleX
+  block.ruleX
 
     core.ruleX1 (intermediate rule that applies on block tokens, nothing yet)
     ...
