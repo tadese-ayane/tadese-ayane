@@ -5,7 +5,7 @@
 <h2>keyup</h2>
 <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
 
-<h1 id="myHeader">Hello World!</h1>
+<h2 id="myHeader">Hello World!</h2>
 <button onclick="displayResult()">Change text</button>
 
 <script>
