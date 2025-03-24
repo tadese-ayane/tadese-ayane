@@ -1,4 +1,14 @@
+more detail:
 
+content/README.md
+content/graphql/README.md
+content/rest/README.md
+contributing/README.md
+data/README.md
+data/reusables/README.md
+data/variables/README.md
+src/README.md
+License
 
 - 👋 Hi, I’m @tadese-ayane
 - 👀 I’m interested in ...
