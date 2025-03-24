@@ -1,5 +1,4 @@
-https://github.com/mdn/browser-compat-data/blob/main/api/Animation.json
-https://github.com/mdn/browser-compat-data/blob/main/api/Animation.json
+
 - 👋 Hi, I’m @tadese-ayane
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
