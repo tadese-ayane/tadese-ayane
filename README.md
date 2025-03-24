@@ -1,6 +1,6 @@
-import fastifyAccepts from '@fastify/accepts';
-import fastifySwagger from '@fastify/swagger';
-import fastifySwaggerUI from '@fastify/swagger-ui';
+-import fastifyAccepts from '@fastify/accepts';
+-import fastifySwagger from '@fastify/swagger';
+-import fastifySwaggerUI from '@fastify/swagger-ui';
 import type { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
 import { GrowthBook } from '@growthbook/growthbook';
 import Ajv from 'ajv';
