@@ -1,48 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
 
-* {
-  box-sizing: border-box;
-}
-
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  background-color: white;
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_geolocation
-
-​
-https://keyupapp.w3spaces.com
- 
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb
 keyup
 [Tensorflow install works. But the import fails](https://discuss.ai.google.dev/t/tensorflow-install-works-but-the-import-fails/67202) :womans_clothes:
 
