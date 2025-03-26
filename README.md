@@ -1,7 +1,13 @@
 
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form
+
 keyup
-[Tensorflow install works. But the import fails](https://discuss.ai.google.dev/t/tensorflow-install-works-but-the-import-fails/67202) :womans_clothes:
+
+[Tensorflow install works. But the import fails]
+
+(https://discuss.ai.google.dev/t/tensorflow-install-works-but-the-import-fails/67202) :womans_clothes:
 
 Create Topic
 <!DOCTYPE html>
