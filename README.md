@@ -1,5 +1,10 @@
 
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb
+Register
+
+Please fill in this form to create an account.
+
+Email Password Repeat Password 
 
 [sign](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form)
 
