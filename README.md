@@ -1,7 +1,7 @@
 
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb
 
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form
+(keyup sign)[https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form]
 
 keyup
 
