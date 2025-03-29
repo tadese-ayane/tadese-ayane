@@ -18,7 +18,6 @@ font-family: Arial, Helvetica, sans-serif;
  padding: 16px;
  background-color: white;
 }
-
 /* Full-width input fields */
 input[type=text], input[type=password] {
  width: 100%;
