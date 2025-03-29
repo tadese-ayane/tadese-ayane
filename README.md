@@ -14,9 +14,7 @@
 
 keyup
 
-[Tensorflow install works. But the import fails]
-
-(https://discuss.ai.google.dev/t/tensorflow-install-works-but-the-import-fails/67202) :womans_clothes:
+[Tensorflow install works. But the import fails](https://discuss.ai.google.dev/t/tensorflow-install-works-but-the-import-fails/67202) :womans_clothes:
 
 Create Topic
 <!DOCTYPE html>
