@@ -1,15 +1,4 @@
 
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE document SYSTEM "CommonMark.dtd">
-<document xmlns="http://commonmark.org/xml/1.0">
-  <html_block>&lt;DOCKTYPE html&gt;
-&lt;html&gt;
-&lt;body&gt;
-&lt;h1&gt;bifa isa&lt;h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;</html_block>
-</document>
-
 [sign](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form)
 
 keyup
