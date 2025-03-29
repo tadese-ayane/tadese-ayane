@@ -2,10 +2,7 @@
 
 [sign](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form)
 
-keyup
-
-[Tensorflow install works. But the import fails](https://discuss.ai.google.dev/t/tensorflow-install-works-but-the-import-fails/
-- 👋 Hi, I’m @tadese-ayane
+👋 Hi, I’m @tadese-ayane
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
 - 💞️ I’m looking to collaborate on ...
