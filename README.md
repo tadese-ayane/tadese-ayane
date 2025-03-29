@@ -4,31 +4,7 @@
 
 keyup
 
-[Tensorflow install works. But the import fails](https://discuss.ai.google.dev/t/tensorflow-install-works-but-the-import-fails/67202) :womans_clothes:
-
-Create Topic
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>keyup</h2>
-<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
-
-<h2 id="myHeader">Hello World!</h2>
-<button onclick="displayResult()">Change text</button>
-
-<script>
-function displayResult() {
-  document.getElementById("myHeader").innerHTML = "Have a nice day!";
-}
-</script>
-
-</body>
-https://www.w3schools.com/html/tryit.asp?filename=tryhtml_id_js
-https://github.com/tadese-ayane/markdown-it/edit/master/docs/README.md
-https://github.com/tadese-ayane/square.github.io/blob/e378b443c8dc01fef57c24ab6682a98021607649/index.html#L42
-
-
+[Tensorflow install works. But the import fails](https://discuss.ai.google.dev/t/tensorflow-install-works-but-the-import-fails/
 - 👋 Hi, I’m @tadese-ayane
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
