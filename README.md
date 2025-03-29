@@ -1,46 +1,47 @@
+---
+name: Bug report
+about: Create a report to help us improve
+title: '[Bug]: '
+labels: 'bug'
+assignees: ''
 
- <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport"
-content="width=device-width, initial-scale=1">
-<style>
-body {
-font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
+---
 
-* {
- box-sizing: border-box;
-}
-/* Add padding to containers */
-.container {
- padding: 16px;
- background-color: white;
-}
-/* Full-width input fields */
-input[type=text], input[type=password] {
- width: 100%;
-padding: 15px;
-<p>Please fill in this form to create an account.</p>
-<hr>
- <label for="email"><b>Email</b></label>
- <input type="text" placeholder="Enter Email" name="email" id="email" required>
- <label for="psw"><b>Password</b></label>
-<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-<label for="psw-repeat"><b>Repeat Password</b></label>
-<input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-<hr>
-<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-<button type="submit" class="registerbtn">Register</button>
-</div>
-<div class="container signin">
-<p>Already have an account? <a href="#">seena</a>.</p>
-</div>
-</form>
-</body>
-</html>
+<!--
+Please note, this package is about IMPLEMENTATION of CommonMark (https://commonmark.org/), not about markdown itself. We stay aside of markup discussions. Prior to reporting a bug, make sure it's about implementation issues.
 
+**Before you post**
+
+1. Read the CommonMark spec: https://spec.commonmark.org/
+2. Check the reference implementation for parse errors: https://spec.commonmark.org/dingus/
+
+**In your report**
+
+It will be very helpful if you can provide permalinks with online samples and explain the difference:
+
+- Online demo of `markdown-it`: https://markdown-it.github.io/
+- Online demo of reference CommonMark's implementation: https://spec.commonmark.org/dingus/
+
+If you wish to provide a code sample, make sure it is as small as possible and can be executed.
+
+**Bug Report Template**
+
+-->
+
+### Description
+<!-- A clear and concise description of what the bug is. -->
+
+### Steps to Reproduce
+<!-- Steps to reproduce the behavior: -->
+
+### Expected behavior
+<!-- A clear and concise description of what you expected to happen. -->
+
+### Screenshots
+<!-- If applicable, add screenshots to help explain your problem. -->
+
+### Additional context
+<!-- Add any other context about the problem here. -->
 
 [sign](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form)
 
