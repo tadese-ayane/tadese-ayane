@@ -1,0 +1,715 @@
+
+HTML
+AST
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "CommonMark.dtd">
+
+<document xmlns="http://commonmark.org/xml/1.0">
+  <paragraph>
+    <text>{</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>name</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>markdown-it</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>version</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>14.1.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>description</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>Markdown-it - modern pluggable markdown parser.</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>keywords</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>[</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>parser</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>commonmark</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-plugin</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>]</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>repository</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>markdown-it/markdown-it</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>license</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>MIT</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>main</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>dist/index.cjs.js</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>module</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>index.mjs</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>exports</text>
+    <text>&quot;</text>
+    <text>: {</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>.</text>
+    <text>&quot;</text>
+    <text>: {</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>import</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>./index.mjs</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>require</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>./dist/index.cjs.js</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>},</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>./</text>
+    <emph>
+      <text>&quot;</text>
+      <text>: {</text>
+      <softbreak />
+      <text>&quot;</text>
+      <text>require</text>
+      <text>&quot;</text>
+      <text>: </text>
+      <text>&quot;</text>
+      <text>./</text>
+    </emph>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>import</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>./</text>
+    <text>*</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>}</text>
+    <softbreak />
+    <text>},</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>bin</text>
+    <text>&quot;</text>
+    <text>: {</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>bin/markdown-it.mjs</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>},</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>scripts</text>
+    <text>&quot;</text>
+    <text>: {</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>lint</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>eslint .</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>test</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>npm run lint </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> CJS</text>
+    <text>_</text>
+    <text>ONLY=1 npm run build </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> c8 --exclude dist --exclude test -r text -r html -r lcov mocha </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> node support/specsplit.mjs</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>doc</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>node support/build</text>
+    <text>_</text>
+    <text>doc.mjs</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>gh-doc</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>npm run doc </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> gh-pages -d apidoc -f</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>demo</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>npm run lint </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> node support/build</text>
+    <text>_</text>
+    <text>demo.mjs</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>gh-demo</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>npm run demo </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> gh-pages -d demo -f -b master -r git@github.com:markdown-it/markdown-it.github.io.git</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>build</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>rollup -c support/rollup.config.mjs</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>benchmark-deps</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>npm install --prefix benchmark/extra/ -g marked@0.3.6 commonmark@0.26.0 markdown-it/markdown-it.git#2.2.1</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>specsplit</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>support/specsplit.mjs good -o test/fixtures/commonmark/good.txt </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> support/specsplit.mjs bad -o test/fixtures/commonmark/bad.txt </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> support/specsplit.mjs</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>todo</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>grep </text>
+    <text>'</text>
+    <text>TODO</text>
+    <text>'</text>
+    <text> -n -r ./lib 2&gt;/dev/null</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>prepublishOnly</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>npm test </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> npm run build </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> npm run gh-demo </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> npm run gh-doc</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>},</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>files</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>[</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>index.mjs</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>lib/</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>dist/</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>]</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>dependencies</text>
+    <text>&quot;</text>
+    <text>: {</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>argparse</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^2.0.1</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>entities</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^4.4.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>linkify-it</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^5.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>mdurl</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^2.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>punycode.js</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^2.3.1</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>uc.micro</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^2.1.0</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>},</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>devDependencies</text>
+    <text>&quot;</text>
+    <text>: {</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>@rollup/plugin-babel</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^6.0.4</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>@rollup/plugin-commonjs</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^25.0.7</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>@rollup/plugin-node-resolve</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^15.2.3</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>@rollup/plugin-terser</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^0.4.4</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>ansi</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^0.3.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>benchmark</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>~2.1.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>c8</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^8.0.1</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>chai</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^4.2.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>eslint</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^8.4.1</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>eslint-config-standard</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^17.1.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>express</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^4.14.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>gh-pages</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^6.1.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>highlight.js</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^11.9.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>jest-worker</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^29.7.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-abbr</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^2.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-container</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^4.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-deflist</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^3.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-emoji</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^3.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-footnote</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^4.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-for-inline</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^2.0.1</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-ins</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^4.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-mark</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^4.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-sub</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^2.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-sup</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^2.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>markdown-it-testgen</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^0.1.3</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>mocha</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^10.2.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>ndoc</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^6.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>needle</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^3.0.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>rollup</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^4.5.0</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>shelljs</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^0.8.4</text>
+    <text>&quot;</text>
+    <text>,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>supertest</text>
+    <text>&quot;</text>
+    <text>: </text>
+    <text>&quot;</text>
+    <text>^6.0.1</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>},</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>mocha</text>
+    <text>&quot;</text>
+    <text>: {</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>inline-diffs</text>
+    <text>&quot;</text>
+    <text>: true,</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>timeout</text>
+    <text>&quot;</text>
+    <text>: 60000</text>
+    <softbreak />
+    <text>}</text>
+    <softbreak />
+    <text>}</text>
+  </paragraph>
+</document>
