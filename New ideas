@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,16 +11,27 @@
 
 #define UTF8_REPL "\xEF\xBF\xBD"
 
-// Node types and functions...
+// Function Prototypes
+static void test_md_to_html(test_batch_runner *runner, const char *markdown,
+                            const char *expected_html, const char *msg);
 
+// Main Function
+int main() {
+    // Main function implementation...
+    return 0;
+}
+
+/**
+ * @brief Converts Markdown to HTML and tests the output.
+ * 
+ * @param runner          The test batch runner.
+ * @param markdown        The Markdown input.
+ * @param expected_html   The expected HTML output.
+ * @param msg             The message to display on test failure.
+ */
 static void test_md_to_html(test_batch_runner *runner, const char *markdown,
                             const char *expected_html, const char *msg) {
     // Function implementation...
 }
 
 // Other function implementations...
-
-int main() {
-    // Main function implementation...
-    return 0;
-}
