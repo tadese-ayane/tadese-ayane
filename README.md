@@ -1,20 +1,6 @@
+/api/v1/publisher/deployment/{deploymentId}/download/{relativePath}
 
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE package SYSTEM "KeyupApp">
 
-<package xmlns="http://github.com/KeyupApp/xml/1.0">
-  <name>markdown-it</name>
-  <version>14.1.0</version>
-  <description>tadese-nagewo.</description>
-  <keywords>
-    <keyword>keyupapp</keyword>
-    <keyword>parser</keyword>
-    <keyword>commonmark</keyword>
-    <keyword>markdown-it</keyword>
-    <keyword>markdown-it-plugin</keyword>
-  </keywords>
-  <!-- Continue with other elements similarly -->
-</package>
 
 [sign](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form)
 
