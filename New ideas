@@ -1,1 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+#define CMARK_NO_SHORT_NAMES
+#include "cmark.h"
+#include "node.h"
+#include "harness.h"
+#include "cplusplus.h"
+
+#define UTF8_REPL "\xEF\xBF\xBD"
+
+// Node types and functions...
+
+static void test_md_to_html(test_batch_runner *runner, const char *markdown,
+                            const char *expected_html, const char *msg) {
+    // Function implementation...
+}
+
+// Other function implementations...
+
+int main() {
+    // Main function implementation...
+    return 0;
+}
