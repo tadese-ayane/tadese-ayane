@@ -1,4 +1,4 @@
-/api/v1/publisher/deployment/{deploymentId}/download/{relativePath}
+
 
 
 
