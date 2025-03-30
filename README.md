@@ -5,7 +5,7 @@
 <package xmlns="http://github.com/KeyupApp/xml/1.0">
   <name>markdown-it</name>
   <version>14.1.0</version>
-  <description>Markdown-it - modern pluggable markdown parser.</description>
+  <description>tadese-nagewo.</description>
   <keywords>
     <keyword>keyupapp</keyword>
     <keyword>parser</keyword>
