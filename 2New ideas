@@ -1,1 +1,168 @@
 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "CommonMark.dtd">
+
+<document xmlns="http://commonmark.org/xml/1.0">
+  <paragraph>
+    <text>#include </text>
+    <text>&lt;</text>
+    <text>stdio.h&gt;</text>
+    <softbreak />
+    <text>#include </text>
+    <text>&lt;</text>
+    <text>stdlib.h&gt;</text>
+    <softbreak />
+    <text>#include </text>
+    <text>&lt;</text>
+    <text>string.h&gt;</text>
+  </paragraph>
+  <paragraph>
+    <text>#define CMARK</text>
+    <text>_</text>
+    <text>NO</text>
+    <text>_</text>
+    <text>SHORT</text>
+    <text>_</text>
+    <text>NAMES</text>
+    <softbreak />
+    <text>#include </text>
+    <text>&quot;</text>
+    <text>cmark.h</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>#include </text>
+    <text>&quot;</text>
+    <text>node.h</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>#include </text>
+    <text>&quot;</text>
+    <text>harness.h</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>#include </text>
+    <text>&quot;</text>
+    <text>cplusplus.h</text>
+    <text>&quot;</text>
+  </paragraph>
+  <paragraph>
+    <text>#define UTF8</text>
+    <text>_</text>
+    <text>REPL </text>
+    <text>&quot;</text>
+    <text>\</text>
+    <text>xEF</text>
+    <text>\</text>
+    <text>xBF</text>
+    <text>\</text>
+    <text>xBD</text>
+    <text>&quot;</text>
+  </paragraph>
+  <paragraph>
+    <text>// Function Prototypes</text>
+    <softbreak />
+    <text>static void test</text>
+    <text>_</text>
+    <text>md</text>
+    <text>_</text>
+    <text>to</text>
+    <text>_</text>
+    <text>html(test</text>
+    <text>_</text>
+    <text>batch</text>
+    <text>_</text>
+    <text>runner </text>
+    <text>*</text>
+    <text>runner, const char </text>
+    <text>*</text>
+    <text>markdown,</text>
+    <softbreak />
+    <text>const char </text>
+    <text>*</text>
+    <text>expected</text>
+    <text>_</text>
+    <text>html, const char </text>
+    <text>*</text>
+    <text>msg);</text>
+  </paragraph>
+  <paragraph>
+    <text>// Main Function</text>
+    <softbreak />
+    <text>int main() {</text>
+    <softbreak />
+    <text>// Main function implementation...</text>
+    <softbreak />
+    <text>return 0;</text>
+    <softbreak />
+    <text>}</text>
+  </paragraph>
+  <paragraph>
+    <text>/</text>
+    <text>**</text>
+  </paragraph>
+  <list type="bullet" tight="true">
+    <item>
+      <paragraph>
+        <text>@brief Converts Markdown to HTML and tests the output.</text>
+      </paragraph>
+    </item>
+    <item>
+    </item>
+    <item>
+      <paragraph>
+        <text>@param runner          The test batch runner.</text>
+      </paragraph>
+    </item>
+    <item>
+      <paragraph>
+        <text>@param markdown        The Markdown input.</text>
+      </paragraph>
+    </item>
+    <item>
+      <paragraph>
+        <text>@param expected</text>
+        <text>_</text>
+        <text>html   The expected HTML output.</text>
+      </paragraph>
+    </item>
+    <item>
+      <paragraph>
+        <text>@param msg             The message to display on test failure.</text>
+        <softbreak />
+        <text>*</text>
+        <text>/</text>
+        <softbreak />
+        <text>static void test</text>
+        <text>_</text>
+        <text>md</text>
+        <text>_</text>
+        <text>to</text>
+        <text>_</text>
+        <text>html(test</text>
+        <text>_</text>
+        <text>batch</text>
+        <text>_</text>
+        <text>runner </text>
+        <text>*</text>
+        <text>runner, const char </text>
+        <text>*</text>
+        <text>markdown,</text>
+        <softbreak />
+        <text>const char </text>
+        <text>*</text>
+        <text>expected</text>
+        <text>_</text>
+        <text>html, const char </text>
+        <text>*</text>
+        <text>msg) {</text>
+        <softbreak />
+        <text>// Function implementation...</text>
+        <softbreak />
+        <text>}</text>
+      </paragraph>
+    </item>
+  </list>
+  <paragraph>
+    <text>// Other function implementations...</text>
+  </paragraph>
+</document>
