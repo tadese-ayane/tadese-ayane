@@ -1,6 +1,5 @@
-
 {
-  "pspId": "B86BF7F89377552B43F74A2D40F511A41A3B383BF1F8EBF7AD64DF7303BA6860",
-  "version": 1,
-  "createdOn": ...
+  "pspId": "B86BF7F89377552B43F74A2D40F511A41A3B383BF1F8EBF7AD64DF7303BA6860", // Unique identifier for the PSP
+  "version": 1, // Schema version
+  "createdOn": "2025-03-30T13:17:24Z" // Creation date in ISO 8601 format
 }
