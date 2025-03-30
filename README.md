@@ -7,7 +7,7 @@
   <version>14.1.0</version>
   <description>Markdown-it - modern pluggable markdown parser.</description>
   <keywords>
-    <keyword>markdown</keyword>
+    <keyword>keyupapp</keyword>
     <keyword>parser</keyword>
     <keyword>commonmark</keyword>
     <keyword>markdown-it</keyword>
