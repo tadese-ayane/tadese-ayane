@@ -1,104 +1,375 @@
 
-#!/usr/bin/env node
-/* eslint no-console:0 */
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "CommonMark.dtd">
 
-import fs from 'node:fs';
-import argparse from 'argparse';
-import markdownit from '../index.mjs';
+<document xmlns="http://commonmark.org/xml/1.0">
+  <paragraph>
+    <text>#</text>
+    <text>!</text>
+    <text>/usr/bin/env node</text>
+    <softbreak />
+    <text>/</text>
+    <text>*</text>
+    <text> eslint no-console:0 </text>
+    <text>*</text>
+    <text>/</text>
+  </paragraph>
+  <paragraph>
+    <text>import fs from </text>
+    <text>'</text>
+    <text>node:fs</text>
+    <text>'</text>
+    <text>;</text>
+    <softbreak />
+    <text>import argparse from </text>
+    <text>'</text>
+    <text>argparse</text>
+    <text>'</text>
+    <text>;</text>
+    <softbreak />
+    <text>import markdownit from </text>
+    <text>'</text>
+    <text>../index.mjs</text>
+    <text>'</text>
+    <text>;</text>
+  </paragraph>
+  <paragraph>
+    <text>// Initialize the argument parser</text>
+    <softbreak />
+    <text>const cli = new argparse.ArgumentParser({</text>
+    <softbreak />
+    <text>prog: </text>
+    <text>'</text>
+    <text>markdown-it</text>
+    <text>'</text>
+    <text>,</text>
+    <softbreak />
+    <text>add</text>
+    <text>_</text>
+    <text>help: true</text>
+    <softbreak />
+    <text>});</text>
+  </paragraph>
+  <paragraph>
+    <text>// Define CLI arguments</text>
+    <softbreak />
+    <text>cli.add</text>
+    <text>_</text>
+    <text>argument(</text>
+    <text>'</text>
+    <text>-v</text>
+    <text>'</text>
+    <text>, </text>
+    <text>'</text>
+    <text>--version</text>
+    <text>'</text>
+    <text>, {</text>
+    <softbreak />
+    <text>action: </text>
+    <text>'</text>
+    <text>version</text>
+    <text>'</text>
+    <text>,</text>
+    <softbreak />
+    <text>version: JSON.parse(fs.readFileSync(new URL(</text>
+    <text>'</text>
+    <text>../package.json</text>
+    <text>'</text>
+    <text>, import.meta.url))).version</text>
+    <softbreak />
+    <text>});</text>
+  </paragraph>
+  <paragraph>
+    <text>cli.add</text>
+    <text>_</text>
+    <text>argument(</text>
+    <text>'</text>
+    <text>--no-html</text>
+    <text>'</text>
+    <text>, {</text>
+    <softbreak />
+    <text>help: </text>
+    <text>'</text>
+    <text>Disable embedded HTML</text>
+    <text>'</text>
+    <text>,</text>
+    <softbreak />
+    <text>action: </text>
+    <text>'</text>
+    <text>store</text>
+    <text>_</text>
+    <text>true</text>
+    <text>'</text>
+    <softbreak />
+    <text>});</text>
+  </paragraph>
+  <paragraph>
+    <text>cli.add</text>
+    <text>_</text>
+    <text>argument(</text>
+    <text>'</text>
+    <text>-l</text>
+    <text>'</text>
+    <text>, </text>
+    <text>'</text>
+    <text>--linkify</text>
+    <text>'</text>
+    <text>, {</text>
+    <softbreak />
+    <text>help: </text>
+    <text>'</text>
+    <text>Autolink text</text>
+    <text>'</text>
+    <text>,</text>
+    <softbreak />
+    <text>action: </text>
+    <text>'</text>
+    <text>store</text>
+    <text>_</text>
+    <text>true</text>
+    <text>'</text>
+    <softbreak />
+    <text>});</text>
+  </paragraph>
+  <paragraph>
+    <text>cli.add</text>
+    <text>_</text>
+    <text>argument(</text>
+    <text>'</text>
+    <text>-t</text>
+    <text>'</text>
+    <text>, </text>
+    <text>'</text>
+    <text>--typographer</text>
+    <text>'</text>
+    <text>, {</text>
+    <softbreak />
+    <text>help: </text>
+    <text>'</text>
+    <text>Enable smartquotes and other typographic replacements</text>
+    <text>'</text>
+    <text>,</text>
+    <softbreak />
+    <text>action: </text>
+    <text>'</text>
+    <text>store</text>
+    <text>_</text>
+    <text>true</text>
+    <text>'</text>
+    <softbreak />
+    <text>});</text>
+  </paragraph>
+  <paragraph>
+    <text>cli.add</text>
+    <text>_</text>
+    <text>argument(</text>
+    <text>'</text>
+    <text>--trace</text>
+    <text>'</text>
+    <text>, {</text>
+    <softbreak />
+    <text>help: </text>
+    <text>'</text>
+    <text>Show stack trace on error</text>
+    <text>'</text>
+    <text>,</text>
+    <softbreak />
+    <text>action: </text>
+    <text>'</text>
+    <text>store</text>
+    <text>_</text>
+    <text>true</text>
+    <text>'</text>
+    <softbreak />
+    <text>});</text>
+  </paragraph>
+  <paragraph>
+    <text>cli.add</text>
+    <text>_</text>
+    <text>argument(</text>
+    <text>'</text>
+    <text>file</text>
+    <text>'</text>
+    <text>, {</text>
+    <softbreak />
+    <text>help: </text>
+    <text>'</text>
+    <text>File to read</text>
+    <text>'</text>
+    <text>,</text>
+    <softbreak />
+    <text>nargs: </text>
+    <text>'</text>
+    <text>?</text>
+    <text>'</text>
+    <text>,</text>
+    <softbreak />
+    <text>default: </text>
+    <text>'</text>
+    <text>-</text>
+    <text>'</text>
+    <softbreak />
+    <text>});</text>
+  </paragraph>
+  <paragraph>
+    <text>cli.add</text>
+    <text>_</text>
+    <text>argument(</text>
+    <text>'</text>
+    <text>-o</text>
+    <text>'</text>
+    <text>, </text>
+    <text>'</text>
+    <text>--output</text>
+    <text>'</text>
+    <text>, {</text>
+    <softbreak />
+    <text>help: </text>
+    <text>'</text>
+    <text>File to write</text>
+    <text>'</text>
+    <text>,</text>
+    <softbreak />
+    <text>default: </text>
+    <text>'</text>
+    <text>-</text>
+    <text>'</text>
+    <softbreak />
+    <text>});</text>
+  </paragraph>
+  <paragraph>
+    <text>// Parse CLI arguments</text>
+    <softbreak />
+    <text>const options = cli.parse</text>
+    <text>_</text>
+    <text>args();</text>
+  </paragraph>
+  <paragraph>
+    <text>// Read file function</text>
+    <softbreak />
+    <text>async function readFile(filename, encoding) {</text>
+    <softbreak />
+    <text>if (filename === </text>
+    <text>'</text>
+    <text>-</text>
+    <text>'</text>
+    <text>) {</text>
+    <softbreak />
+    <text>// Read from stdin</text>
+    <softbreak />
+    <text>return new Promise((resolve, reject) =&gt; {</text>
+    <softbreak />
+    <text>const chunks = </text>
+    <text>[</text>
+    <text>]</text>
+    <text>;</text>
+    <softbreak />
+    <text>process.stdin.on(</text>
+    <text>'</text>
+    <text>data</text>
+    <text>'</text>
+    <text>, (chunk) =&gt; chunks.push(chunk));</text>
+    <softbreak />
+    <text>process.stdin.on(</text>
+    <text>'</text>
+    <text>end</text>
+    <text>'</text>
+    <text>, () =&gt; resolve(Buffer.concat(chunks).toString(encoding)));</text>
+    <softbreak />
+    <text>process.stdin.on(</text>
+    <text>'</text>
+    <text>error</text>
+    <text>'</text>
+    <text>, reject);</text>
+    <softbreak />
+    <text>});</text>
+    <softbreak />
+    <text>} else {</text>
+    <softbreak />
+    <text>return fs.promises.readFile(filename, encoding);</text>
+    <softbreak />
+    <text>}</text>
+    <softbreak />
+    <text>}</text>
+  </paragraph>
+  <paragraph>
+    <text>// Main function to process the markdown file</text>
+    <softbreak />
+    <text>async function processFile() {</text>
+    <softbreak />
+    <text>try {</text>
+    <softbreak />
+    <text>const input = await readFile(options.file, </text>
+    <text>'</text>
+    <text>utf8</text>
+    <text>'</text>
+    <text>);</text>
+    <softbreak />
+    <text>const md = markdownit({</text>
+    <softbreak />
+    <text>html: </text>
+    <text>!</text>
+    <text>options.no</text>
+    <text>_</text>
+    <text>html,</text>
+    <softbreak />
+    <text>xhtmlOut: false,</text>
+    <softbreak />
+    <text>typographer: options.typographer,</text>
+    <softbreak />
+    <text>linkify: options.linkify</text>
+    <softbreak />
+    <text>});</text>
+  </paragraph>
+  <code_block>const output = md.render(input);
 
-// Initialize the argument parser
-const cli = new argparse.ArgumentParser({
-  prog: 'markdown-it',
-  add_help: true
-});
-
-// Define CLI arguments
-cli.add_argument('-v', '--version', {
-  action: 'version',
-  version: JSON.parse(fs.readFileSync(new URL('../package.json', import.meta.url))).version
-});
-
-cli.add_argument('--no-html', {
-  help: 'Disable embedded HTML',
-  action: 'store_true'
-});
-
-cli.add_argument('-l', '--linkify', {
-  help: 'Autolink text',
-  action: 'store_true'
-});
-
-cli.add_argument('-t', '--typographer', {
-  help: 'Enable smartquotes and other typographic replacements',
-  action: 'store_true'
-});
-
-cli.add_argument('--trace', {
-  help: 'Show stack trace on error',
-  action: 'store_true'
-});
-
-cli.add_argument('file', {
-  help: 'File to read',
-  nargs: '?',
-  default: '-'
-});
-
-cli.add_argument('-o', '--output', {
-  help: 'File to write',
-  default: '-'
-});
-
-// Parse CLI arguments
-const options = cli.parse_args();
-
-// Read file function
-async function readFile(filename, encoding) {
-  if (filename === '-') {
-    // Read from stdin
-    return new Promise((resolve, reject) => {
-      const chunks = [];
-      process.stdin.on('data', (chunk) => chunks.push(chunk));
-      process.stdin.on('end', () => resolve(Buffer.concat(chunks).toString(encoding)));
-      process.stdin.on('error', reject);
-    });
-  } else {
-    return fs.promises.readFile(filename, encoding);
-  }
+if (options.output === '-') {
+  // Write to stdout
+  process.stdout.write(output);
+} else {
+  await fs.promises.writeFile(options.output, output);
 }
-
-// Main function to process the markdown file
-async function processFile() {
-  try {
-    const input = await readFile(options.file, 'utf8');
-    const md = markdownit({
-      html: !options.no_html,
-      xhtmlOut: false,
-      typographer: options.typographer,
-      linkify: options.linkify
-    });
-
-    const output = md.render(input);
-
-    if (options.output === '-') {
-      // Write to stdout
-      process.stdout.write(output);
-    } else {
-      await fs.promises.writeFile(options.output, output);
-    }
-  } catch (err) {
-    if (err.code === 'ENOENT') {
-      console.error('File not found: ' + options.file);
-    } else {
-      console.error(
-        (options.trace && err.stack) ||
-        err.message ||
-        String(err)
-      );
-    }
-    process.exit(1);
-  }
-}
-
-// Execute main function
-processFile();
+</code_block>
+  <paragraph>
+    <text>} catch (err) {</text>
+    <softbreak />
+    <text>if (err.code === </text>
+    <text>'</text>
+    <text>ENOENT</text>
+    <text>'</text>
+    <text>) {</text>
+    <softbreak />
+    <text>console.error(</text>
+    <text>'</text>
+    <text>File not found: </text>
+    <text>'</text>
+    <text> + options.file);</text>
+    <softbreak />
+    <text>} else {</text>
+    <softbreak />
+    <text>console.error(</text>
+    <softbreak />
+    <text>(options.trace </text>
+    <text>&amp;</text>
+    <text>&amp;</text>
+    <text> err.stack) ||</text>
+    <softbreak />
+    <text>err.message ||</text>
+    <softbreak />
+    <text>String(err)</text>
+    <softbreak />
+    <text>);</text>
+    <softbreak />
+    <text>}</text>
+    <softbreak />
+    <text>process.exit(1);</text>
+    <softbreak />
+    <text>}</text>
+    <softbreak />
+    <text>}</text>
+  </paragraph>
+  <paragraph>
+    <text>// Execute main function</text>
+    <softbreak />
+    <text>processFile();</text>
+  </paragraph
