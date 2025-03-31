@@ -1,1 +1,104 @@
 
+#!/usr/bin/env node
+/* eslint no-console:0 */
+
+import fs from 'node:fs';
+import argparse from 'argparse';
+import markdownit from '../index.mjs';
+
+// Initialize the argument parser
+const cli = new argparse.ArgumentParser({
+  prog: 'markdown-it',
+  add_help: true
+});
+
+// Define CLI arguments
+cli.add_argument('-v', '--version', {
+  action: 'version',
+  version: JSON.parse(fs.readFileSync(new URL('../package.json', import.meta.url))).version
+});
+
+cli.add_argument('--no-html', {
+  help: 'Disable embedded HTML',
+  action: 'store_true'
+});
+
+cli.add_argument('-l', '--linkify', {
+  help: 'Autolink text',
+  action: 'store_true'
+});
+
+cli.add_argument('-t', '--typographer', {
+  help: 'Enable smartquotes and other typographic replacements',
+  action: 'store_true'
+});
+
+cli.add_argument('--trace', {
+  help: 'Show stack trace on error',
+  action: 'store_true'
+});
+
+cli.add_argument('file', {
+  help: 'File to read',
+  nargs: '?',
+  default: '-'
+});
+
+cli.add_argument('-o', '--output', {
+  help: 'File to write',
+  default: '-'
+});
+
+// Parse CLI arguments
+const options = cli.parse_args();
+
+// Read file function
+async function readFile(filename, encoding) {
+  if (filename === '-') {
+    // Read from stdin
+    return new Promise((resolve, reject) => {
+      const chunks = [];
+      process.stdin.on('data', (chunk) => chunks.push(chunk));
+      process.stdin.on('end', () => resolve(Buffer.concat(chunks).toString(encoding)));
+      process.stdin.on('error', reject);
+    });
+  } else {
+    return fs.promises.readFile(filename, encoding);
+  }
+}
+
+// Main function to process the markdown file
+async function processFile() {
+  try {
+    const input = await readFile(options.file, 'utf8');
+    const md = markdownit({
+      html: !options.no_html,
+      xhtmlOut: false,
+      typographer: options.typographer,
+      linkify: options.linkify
+    });
+
+    const output = md.render(input);
+
+    if (options.output === '-') {
+      // Write to stdout
+      process.stdout.write(output);
+    } else {
+      await fs.promises.writeFile(options.output, output);
+    }
+  } catch (err) {
+    if (err.code === 'ENOENT') {
+      console.error('File not found: ' + options.file);
+    } else {
+      console.error(
+        (options.trace && err.stack) ||
+        err.message ||
+        String(err)
+      );
+    }
+    process.exit(1);
+  }
+}
+
+// Execute main function
+processFile();
