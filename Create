@@ -1,1 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "CommonMark.dtd">
 
+<document xmlns="http://commonmark.org/xml/1.0">
+  <paragraph>
+    <text>name: 🎉 Addition to list</text>
+    <softbreak />
+    <text>description: Suggest an addition to this list.</text>
+    <softbreak />
+    <text>title: </text>
+    <text>'</text>
+    <text>🎉 Add </text>
+    <html_inline>&lt;App Name&gt;</html_inline>
+    <text>'</text>
+    <softbreak />
+    <text>labels: </text>
+    <text>[</text>
+    <text>'</text>
+    <text>addition</text>
+    <text>'</text>
+    <text>]</text>
+    <softbreak />
+    <text>body:</text>
+  </paragraph>
+  <list type="bullet" tight="false">
+    <item>
+      <paragraph>
+        <text>type: markdown</text>
+        <softbreak />
+        <text>attributes:</text>
+        <softbreak />
+        <text>value: |</text>
+        <softbreak />
+        <text>NOTE: Each discrete (stand-alone) request should be in its own issue.</text>
+      </paragraph>
+    </item>
+    <item>
+      <paragraph>
+        <text>type: textarea</text>
+        <softbreak />
+        <text>attributes:</text>
+        <softbreak />
+        <text>label: 🪩 Provide a link to the proposed addition</text>
+        <softbreak />
+        <text>description: </text>
+        <text>'</text>
+        <text>Provide a clear and concise link to the proposed addition. Only one link per issue is allowed.</text>
+        <text>'</text>
+        <softbreak />
+        <text>placeholder: https://github.com/jaywcjlove/awesome-mac</text>
+        <softbreak />
+        <text>validations:</text>
+        <softbreak />
+        <text>required: true</text>
+        <softbreak />
+        <text>maxLength: 300</text>
+      </paragraph>
+    </item>
+    <item>
+      <paragraph>
+        <text>type: textarea</text>
+        <softbreak />
+        <text>attributes:</text>
+        <softbreak />
+        <text>label: 😳 Explain why it should be added</text>
+        <softbreak />
+        <text>description: A clear and concise description of why it should be added to this list.</text>
+        <softbreak />
+        <text>validations:</text>
+        <softbreak />
+        <text>required: true</text>
+        <softbreak />
+        <text>maxLength: 300</text>
+      </paragraph>
+    </item>
+    <item>
+      <paragraph>
+        <text>type: textarea</text>
+        <softbreak />
+        <text>attributes:</text>
+        <softbreak />
+        <text>label: 📖 Additional context</text>
+        <softbreak />
+        <text>description: Add any other context or screenshots about the feature request here.</text>
+        <softbreak />
+        <text>validations:</text>
+        <softbreak />
+        <text>required: false</text>
+      </paragraph>
+    </item>
+    <item>
+      <paragraph>
+        <text>type: checkboxes</text>
+        <softbreak />
+        <text>attributes:</text>
+        <softbreak />
+        <text>label: 🧨 Issue Checklist</text>
+        <softbreak />
+        <text>description: Put an x in the boxes once you</text>
+        <text>'</text>
+        <text>ve completed each step. You can also fill these out after creating the issue. If you</text>
+        <text>'</text>
+        <text>re unsure about any of them, don</text>
+        <text>'</text>
+        <text>t hesitate to ask. We</text>
+        <text>'</text>
+        <text>re here to help</text>
+        <text>!</text>
+        <softbreak />
+        <text>options:</text>
+        <softbreak />
+        <text>- label: I have checked for other similar issues</text>
+        <softbreak />
+        <text>- label: I have explained why this change is important</text>
+        <softbreak />
+        <text>- label: I have added necessary documentation (if appropriate)</text>
+        <softbreak />
+        <text>- label: I have tested the addition and it works as expected</text>
+        <softbreak />
+        <text>validations:</text>
+        <softbreak />
+        <text>required: true</text>
+      </paragraph>
+    </item>
+  </list>
+</document>
