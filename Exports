@@ -1,1 +1,12 @@
-export { default } from './lib/Exports'
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "CommonMark.dtd">
+
+<document xmlns="http://commonmark.org/xml/1.0">
+  <paragraph>
+    <text>export { default } from </text>
+    <text>'</text>
+    <text>./lib/index.mjs</text>
+    <text>'</text>
+  </paragraph>
+</document>
