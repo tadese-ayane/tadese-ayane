@@ -1,1 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "CommonMark.dtd">
+
+<document xmlns="http://commonmark.org/xml/1.0">
+  <paragraph>
+    <text>package template</text>
+  </paragraph>
+  <paragraph>
+    <text>import (</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>encoding/json</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>fmt</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>k8s.io/apimachinery/pkg/util/strategicpatch</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>&quot;</text>
+    <text>github.com/argoproj/argo-cd/v3/applicationset/utils</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>appv1 </text>
+    <text>&quot;</text>
+    <text>github.com/argoproj/argo-cd/v3/pkg/apis/application/v1alpha1</text>
+    <text>&quot;</text>
+    <softbreak />
+    <text>)</text>
+  </paragraph>
+  <paragraph>
+    <text>// applyTemplatePatch applies the provided template patch to the application and returns the updated application.</text>
+    <softbreak />
+    <text>func applyTemplatePatch(app </text>
+    <text>*</text>
+    <text>appv1.Application, templatePatch string) (</text>
+    <text>*</text>
+    <text>appv1.Application, error) {</text>
+    <softbreak />
+    <text>appString, err := json.Marshal(app)</text>
+    <softbreak />
+    <text>if err </text>
+    <text>!</text>
+    <text>= nil {</text>
+    <softbreak />
+    <text>return nil, fmt.Errorf(</text>
+    <text>&quot;</text>
+    <text>failed to marshal Application: %w</text>
+    <text>&quot;</text>
+    <text>, err)</text>
+    <softbreak />
+    <text>}</text>
+  </paragraph>
+  <code_block>convertedTemplatePatch, err := utils.ConvertYAMLToJSON(templatePatch)
+if err != nil {
+    return nil, fmt.Errorf(&quot;failed to convert template patch to JSON %q: %w&quot;, templatePatch, err)
+}
+
+if err := json.Unmarshal([]byte(convertedTemplatePatch), &amp;appv1.Application{}); err != nil {
+    return nil, fmt.Errorf(&quot;invalid template patch %q: %w&quot;, convertedTemplatePatch, err)
+}
+
+data, err := strategicpatch.StrategicMergePatch(appString, []byte(convertedTemplatePatch), appv1.Application{})
+if err != nil {
+    return nil, fmt.Errorf(&quot;failed to apply template patch: %w&quot;, err)
+}
+
+var finalApp appv1.Application
+if err := json.Unmarshal(data, &amp;finalApp); err != nil {
+    return nil, fmt.Errorf(&quot;failed to unmarshal patched application: %w&quot;, err)
+}
+
+// Prevent changes to the `project` field to avoid potential security issues.
+finalApp.Spec.Project = app.Spec.Project
+
+return &amp;finalApp, nil
+</code_block>
+  <paragraph>
+    <text>}</text>
+  </paragraph>
+</document>
 
