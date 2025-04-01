@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE document SYSTEM "CommonMark.dtd">
 
 <document xmlns="http://commonmark.org/xml/1.0">
   <html_block>&lt;!DOCTYPE html&gt;</html_block>
@@ -19,17 +17,16 @@
    &lt;hr&gt;</html_block>
   <html_block>   &lt;div class=&quot;container&quot;&gt;
        &lt;label for=&quot;email&quot;&gt;&lt;b&gt;Email&lt;/b&gt;&lt;/label&gt;
-       &lt;input type=&quot;text&quot; placeholder=&quot;Enter Email&quot; name=&quot;email&quot; id=&quot;email&quot; required aria-label=&quot;Email address&quot; autocomplete=&quot;email&quot;&gt;</html_block>
+       &lt;input type=&quot;text&quot; placeholder=&quot;Enter Email&quot; name=&quot;email&quot; id=&quot;email&quot; required aria-label=&quot;Email address&quot; autocomplete=&quot;email&quot;&gt;
+  </html_block>
   <code_block>   &lt;label for=&quot;psw&quot;&gt;&lt;b&gt;Password&lt;/b&gt;&lt;/label&gt;
    &lt;input type=&quot;password&quot; placeholder=&quot;Enter Password&quot; name=&quot;psw&quot; id=&quot;psw&quot; required aria-label=&quot;Password&quot; autocomplete=&quot;new-password&quot;&gt;
-
    &lt;label for=&quot;psw-repeat&quot;&gt;&lt;b&gt;Repeat Password&lt;/b&gt;&lt;/label&gt;
    &lt;input type=&quot;password&quot; placeholder=&quot;Repeat Password&quot; name=&quot;psw-repeat&quot; id=&quot;psw-repeat&quot; required aria-label=&quot;Repeat Password&quot; autocomplete=&quot;new-password&quot;&gt;
    &lt;hr&gt;
    &lt;p&gt;By creating an account you agree to our &lt;a href=&quot;#&quot;&gt;Terms &amp; Privacy&lt;/a&gt;.&lt;/p&gt;
-
    &lt;button type=&quot;submit&quot; class=&quot;registerbtn&quot;&gt;Register&lt;/button&gt;
-</code_block>
+  </code_block>
   <html_block>   &lt;/div&gt;</html_block>
   <html_block>   &lt;div class=&quot;container signin&quot;&gt;
        &lt;p&gt;Already have an account? &lt;a href=&quot;#&quot;&gt;Sign in&lt;/a&gt;.&lt;/p&gt;
@@ -38,4 +35,3 @@
   <html_block>&lt;/body&gt;
 &lt;/html&gt;</html_block>
 </document>
-
