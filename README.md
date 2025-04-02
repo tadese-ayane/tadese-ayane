@@ -1,5 +1,9 @@
 https://spec.commonmark.org/dingus/?text=&smart=1
 
+  <a id="copy-exercise" href="https://github.com/new?template_owner=skills&template_name=introduction-to-github&owner=%40me&name=skills-introduction-to-github&description=Exercise:+Introduction+to+GitHub&visibility=public">
+      <img src="https://img.shields.io/badge/📠_Copy_Exercise-008000" height="25pt"/>
+   </a>
+
 [sign](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form)
 
 👋 Hi, I’m @tadese-ayane
