@@ -1,4 +1,30 @@
-https://spec.commonmark.org/dingus/?text=&smart=1
+package packageA;
+
+class DefaultClass {
+    int defaultVariable = 20;
+
+    void defaultMethod() {
+        System.out.println("This is a default method.");
+    }
+}
+
+public class TestDefault {
+    public static void main(String[] args) {
+        DefaultClass defaultClass = new DefaultClass();
+        System.out.println("Default Variable: " + defaultClass.defaultVariable);
+        defaultClass.defaultMethod();
+    }
+}
+
+package packageB;
+
+import packageA.DefaultClass;
+
+public class TestDefaultAccess {
+    public static void main(String[] args) {
+        DefaultClass defaultClass = new DefaultClass(); // Error: DefaultClass is not public in packageA; cannot be accessed from outside package
+    }
+}
 
   <a id="copy-exercise" href="https://github.com/new?template_owner=skills&template_name=introduction-to-github&owner=%40me&name=skills-introduction-to-github&description=Exercise:+Introduction+to+GitHub&visibility=public">
       <img src="https://img.shields.io/badge/📠_Copy_Exercise-008000" height="25pt"/>
