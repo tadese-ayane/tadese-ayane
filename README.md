@@ -1,4 +1,3 @@
-https://spec.commonmark.org/dingus/?text=%60%60%20foo%20%60%20bar%20%60%60%0A
 
 [sign](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_register_form)
 
