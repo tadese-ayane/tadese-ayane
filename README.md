@@ -1,3 +1,14 @@
+document.hasUnpartitionedCookieAccess().then((hasAccess) => {
+  if (hasAccess) {
+    // storage access has been granted already.
+    console.log("cookie access granted");
+  } else {
+    // storage access hasn't been granted already;
+    // you may want to call requestStorageAccess().
+    console.log("cookie access denied");
+  }
+});
+
 
 https://privacysandbox.google.com/cookies/storage-access-api#using-saa
 
