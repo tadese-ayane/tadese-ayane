@@ -1,3 +1,7 @@
+<?xml version="1.0" encoding=UTF-8"?>
+<DOCkTYE document SYSTEM "CommonMark.dtd">
+
+<document xmlns="http://commonmark.org/xml/1.0">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,3 +36,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+</document>
