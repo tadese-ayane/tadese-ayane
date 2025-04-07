@@ -1,3 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "CommonMark.dtd">
+
+<document xmlns="http://commonmark.org/xml/1.0">
+  <html_block>&lt;dependency&gt;
+    &lt;groupId&gt;org.openjdk.jmh&lt;/groupId&gt;
+    &lt;artifactId&gt;jmh-core&lt;/artifactId&gt;
+    &lt;version&gt;1.32&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.openjdk.jmh&lt;/groupId&gt;
+    &lt;artifactId&gt;jmh-generator-annprocess&lt;/artifactId&gt;
+    &lt;version&gt;1.32&lt;/version&gt;
+    &lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;</html_block>
+</document>
 
 
 
