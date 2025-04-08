@@ -1,1 +1,32 @@
+from flask import Flask, request, jsonify
+from password_validator import PasswordValidator
 
+app = Flask(__name__)
+
+# Create a schema for password validation
+schema = PasswordValidator()
+schema \
+    .min(8) \
+    .max(100) \
+    .has().uppercase() \
+    .has().lowercase() \
+    .has().digits() \
+    .has().no().spaces()
+
+@app.route('/signup', methods=['POST'])
+def signup():
+    data = request.get_json()
+    username = data.get('username')
+    password = data.get('password')
+    
+    # Validate password strength
+    if not schema.validate(password):
+        return jsonify({"error": "Password does not meet strength requirements"}), 400
+    
+    # Here you would add code to save the user to your database
+    # For the sake of this example, we'll just return a success message
+
+    return jsonify({"message": "User signed up successfully!"}), 201
+
+if __name__ == '__main__':
+    app.run(debug=True)
