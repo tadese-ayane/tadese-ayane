@@ -1,8 +1,9 @@
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello World");
-  }
-}
+rgb(218, 247, 166)
+rgb(255, 195, 0)
+rgb(255, 87, 51)
+rgb(199, 0, 57)
+rgb(144, 12, 63)
+rgb(88, 24, 69)
 
 
 https://github.com/copilot/c/328b129d-d71d-47b4-9036-87262cd8f06a
