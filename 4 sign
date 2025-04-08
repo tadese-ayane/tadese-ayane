@@ -1,1 +1,96 @@
 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "CommonMark.dtd">
+
+<document xmlns="http://commonmark.org/xml/1.0">
+  <paragraph>
+    <text>from flask import Flask, request, jsonify</text>
+    <softbreak />
+    <text>from password</text>
+    <text>_</text>
+    <text>validator import PasswordValidator</text>
+  </paragraph>
+  <paragraph>
+    <text>app = Flask(</text>
+    <strong>
+      <text>name</text>
+    </strong>
+    <text>)</text>
+  </paragraph>
+  <heading level="1">
+    <text>Create a schema for password validation</text>
+  </heading>
+  <paragraph>
+    <text>schema = PasswordValidator()</text>
+    <softbreak />
+    <text>schema </text>
+    <linebreak />
+    <text>.min(8) </text>
+    <linebreak />
+    <text>.max(100) </text>
+    <linebreak />
+    <text>.has().uppercase() </text>
+    <linebreak />
+    <text>.has().lowercase() </text>
+    <linebreak />
+    <text>.has().digits() </text>
+    <linebreak />
+    <text>.has().no().spaces()</text>
+  </paragraph>
+  <paragraph>
+    <text>@app.route(</text>
+    <text>'</text>
+    <text>/signup</text>
+    <text>'</text>
+    <text>, methods=</text>
+    <text>[</text>
+    <text>'</text>
+    <text>POST</text>
+    <text>'</text>
+    <text>]</text>
+    <text>)</text>
+    <softbreak />
+    <text>def signup():</text>
+    <softbreak />
+    <text>data = request.get</text>
+    <text>_</text>
+    <text>json()</text>
+    <softbreak />
+    <text>username = data.get(</text>
+    <text>'</text>
+    <text>username</text>
+    <text>'</text>
+    <text>)</text>
+    <softbreak />
+    <text>password = data.get(</text>
+    <text>'</text>
+    <text>password</text>
+    <text>'</text>
+    <text>)</text>
+  </paragraph>
+  <code_block># Validate password strength
+if not schema.validate(password):
+    return jsonify({&quot;error&quot;: &quot;Password does not meet strength requirements&quot;}), 400
+
+# Here you would add code to save the user to your database
+# For the sake of this example, we'll just return a success message
+
+return jsonify({&quot;message&quot;: &quot;User signed up successfully!&quot;}), 201
+</code_block>
+  <paragraph>
+    <text>if </text>
+    <strong>
+      <text>name</text>
+    </strong>
+    <text> == </text>
+    <text>'</text>
+    <strong>
+      <text>main</text>
+    </strong>
+    <text>'</text>
+    <text>:</text>
+    <softbreak />
+    <text>app.run(debug=True)</text>
+  </paragraph>
+</document>
+
