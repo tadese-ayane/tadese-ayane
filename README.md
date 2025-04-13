@@ -1,15 +1,4 @@
-// Using String (not recommended)
-String password = "mySecretPassword";
-// The password remains in memory, and we cannot clear it explicitly.
 
-// Using char[] (recommended)
-char[] passwordArray = {'m', 'y', 'S', 'e', 'c', 'r', 'e', 't'};
-try {
-    // Process the password
-} finally {
-    // Clear the password from memory
-    java.util.Arrays.fill(passwordArray, '\0');
-}
 
 https://ci.nodejs.org/user/tadese-ayane/
 
