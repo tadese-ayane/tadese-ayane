@@ -1,3 +1,31 @@
+import { useId } from 'react';
+
+export default function Form() {
+  const ageInputId = useId();
+  return (
+    <>
+      <label>
+        maqaa kee:
+        <input name="maqaa duraa" />
+      </label>
+      <hr />
+      <label htmlFor={ageInputId}>Your age:</label>
+      <input id={ageInputId} name="age" type="number" />
+   <div>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" />
+</div>
+
+<div>
+  <label for="pass">Password (8 characters minimum):</label>
+  <input type="password" id="pass" name="password" minlength="8" required />
+</div>
+
+<input type="submit" value="Sign in" />
+    </>
+  );
+}
+
 [keyupApp](https://9v5c9g.csb.app/)
 
 https://9v5c9g.csb.app/tadese-ayane/tadese-ayane/edit/main/README.md
