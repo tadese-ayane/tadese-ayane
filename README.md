@@ -1,6 +1,4 @@
 
-<a href="https://github.com/KeyupApp">Click Here</a>
-
 
 https://9v5c9g.csb.app/tadese-ayane/tadese-ayane/edit/main/README.md
 
