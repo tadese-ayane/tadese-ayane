@@ -40,3 +40,8 @@ https://stackblitz.com/@tadese-ayane/collections/keyup
 ```bash
 npm install markdown-it
 ```
+
+const MarkdownIt = require('markdown-it');
+const md = new MarkdownIt();
+const result = md.render('# markdown-it rulezz!');
+console.log(result);
