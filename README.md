@@ -36,3 +36,7 @@ https://stackblitz.com/@tadese-ayane/collections/keyup
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 - 😄 Pronouns: 
+
+```bash
+npm install markdown-it
+```
